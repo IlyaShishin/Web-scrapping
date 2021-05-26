@@ -15,7 +15,7 @@ soup = BeautifulSoup(text, features='html.parser')
 
 
 def search_posts():
-    """ search_posts -> Ищет свежие посты по ключевым словам в названии, хабах и текст-превью"""
+    """ search_posts -> Ищет свежие посты по ключевым словам в названии, хабах и тексте поста"""
     post_text = []
     result = []
     articles = soup.find_all('article')
